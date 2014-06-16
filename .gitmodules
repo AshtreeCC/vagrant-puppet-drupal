@@ -1,0 +1,21 @@
+[submodule "puppet/modules/bootstrap"]
+	path = puppet/modules/bootstrap
+	url = git@github.com:AshtreeCC/puppet-bootstrap.git
+[submodule "puppet/modules/mysql"]
+	path = puppet/modules/mysql
+	url = git@github.com:AshtreeCC/puppet-mysql.git
+[submodule "puppet/modules/nginx"]
+	path = puppet/modules/nginx
+	url = git@github.com:AshtreeCC/puppet-nginx.git
+[submodule "puppet/modules/php"]
+	path = puppet/modules/php
+	url = git@github.com:AshtreeCC/puppet-php.git
+[submodule "puppet/modules/tools"]
+	path = puppet/modules/tools
+	url = git@github.com:AshtreeCC/puppet-tools.git
+[submodule "www/www.ponderingpanda.dev"]
+	path = www/www.ponderingpanda.dev
+	url = git@github.com:AshtreeCC/ponderingpanda.com.git
+[submodule "puppet/modules/drupal"]
+	path = puppet/modules/drupal
+	url = git@github.com:AshtreeCC/puppet-drupal.git

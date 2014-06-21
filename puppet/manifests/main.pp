@@ -1,4 +1,6 @@
-vagrant stage { 'prepare': before => Stage['main'] }
+stage { 'prepare': 
+	before => Stage['main']
+}
 
 class {
 	'bootstrap':      stage => prepare;
@@ -6,14 +8,20 @@ class {
 	'php':            stage => main;
 	'nginx':          stage => main;
 	'mysql':          stage => main;
+	'drupal':	  stage => main;
 }
 
-addServer {'phalcon':
-	site => 'phalcon.dev',
+addServer { 'drupal':
+	site => 'drupal.dev',
 	root => '/var/www/'
 }
 
-addServer {'ponderingpanda':
-	site => 'www.ponderingpanda.dev',
-	root => '/var/www/www.ponderingpanda.dev/public/'
+addServer { 'ponderingpanda':
+	site => 'ponderingpanda.dev',
+	root => '/var/www/www.ponderingpanda.dev/'
+}
+
+addMysql { 'www_pp':
+	user => 'www_pp_usr',
+	password => '565s7kcx'	
 }
